@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/form.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form action="../database/register.php" method="post">
+        <h2 style="text-align: center; margin-bottom: 20px">Sign up</h2>
+        <label>Nama: </label> <br />
+        <input
+          type="text"
+          name="nama"
+          placeholder="Masukan Nama Anda"
+          required
+        />
+        <br />
+
+        <label>Tanggal lahir: </label> <br />
+        <input type="date" name="tl" placeholder="Tanggal lahir" required />
+        <br />
+
+        <label>Prodi: </label> <br />
+        <select name="prodi" required>
+          <option selected>Pilih Prodi</option>
+          <option value="IF">Teknik Informatika</option>
+          <option value="SI">Sistem Informasi</option>
+        </select>
+        <br />
+
+        <label>Email: </label> <br />
+        <input
+          type="email"
+          name="email"
+          placeholder="Masukan Email anda"
+          required
+        />
+        <br />
+
+        <label>Password: </label> <br />
+        <input
+          type="password"
+          name="password"
+          placeholder="Masukan Password"
+          required
+        />
+        <br />
+
+        <label>Konfirmasi Password: </label> <br />
+        <input
+          type="password"
+          name="konfirmasi_pw"
+          placeholder="KonfirmasiPassword"
+          required
+        />
+        <br />
+
+        <button type="submit" name="submit">Register</button>
+        <a href="login.html">Sudah Punya akun?</a>
+      </form>
+    </div>
+  </body>
+</html>

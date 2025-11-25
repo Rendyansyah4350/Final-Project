@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/form.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form action="../database/login.php" method="post">
+        <h2 style="text-align: center; margin-bottom: 20px">Login</h2>
+        <label>Email: </label> <br />
+        <input
+          type="email"
+          name="email"
+          placeholder="Masukan Email Anda"
+          required
+        />
+        <br />
+
+        <label>Password: </label> <br />
+        <input
+          type="password"
+          name="password"
+          placeholder="Masukan Password Anda"
+          required
+        />
+        <br />
+
+        <button type="submit">Login</button>
+        <a href="../forget_password/lupa_pw.html">Lupa Password?</a><br />
+        <a href="register.html">Belum Memiliki akun?</a>
+      </form>
+    </div>
+  </body>
+</html>
